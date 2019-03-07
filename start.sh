@@ -2,4 +2,4 @@
 
 cd "$(dirname $0)"
 
-/usr/local/bin/node app.js
+/usr/local/bin/node index.js

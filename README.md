@@ -2,6 +2,6 @@
 
 ## cron
 ```bash
-# e.g. Run the script hourly
-0 * * * * /path/to/jkk-watcher/start.sh
+# Run the script every three hours
+0 */3 * * * /path/to/jkk-watcher/start.sh
 ```

@@ -8,7 +8,7 @@ async function hasVacantRoom(url) {
   await page.close();
 
   page = await new Promise((resolve) => browser.once('targetcreated', (target) => resolve(target.page()))); // Get a page created by window.open
-  await page.waitFor('table', { timeout: 3000 });
+  await page.waitFor('table', {timeout: 3000});
   const html = await page.evaluate(() => document.body.innerText);
 
   const hasVacantRoom = html.includes('該当しました');
@@ -19,7 +19,7 @@ async function hasVacantRoom(url) {
 }
 
 async function openJKK(url) {
-  const browser = await puppeteer.launch({ headless: false }); // default is true
+  const browser = await puppeteer.launch({headless: false}); // default is true
   const page = await browser.newPage();
   await page.goto(url);
   await page.close();

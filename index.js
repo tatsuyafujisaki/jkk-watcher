@@ -37,7 +37,7 @@ async function openJKK(url) {
     '30B330FC30B730E330CF30A430E030C130CF30E4',
 
     // Kasumidai
-    '30AB30B930DF30C030A4',
+    // '30AB30B930DF30C030A4',
   ];
 
   const baseUrl = 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=';

@@ -26,14 +26,18 @@ async function openJKK(url) {
 }
 
 (async () => {
-  // Nakamurakita
-  const url = 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E430CF30A430E030CA30AB30E030E930AD30BF';
+  const urls = [
+    /* Nakamurakita */ 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E430CF30A430E030CA30AB30E030E930AD30BF',
+    /* Kotakecho */ 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E330CF30A430E030B330BF30B130C130E730A6',
+    /* Chihaya */ 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E330CF30A430E030C130CF30E4'];
 
   // Tanashi
   // const url = 'https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30BF30CA30B730CB30B730CF30E9';
 
-  if (await hasVacantRoom(url)) {
-    openJKK(url);
+  for (let i = 0; i < urls.length; i++) {
+    if (await hasVacantRoom(urls[i])) {
+      openJKK(urls[i]);
+    }
   }
 })();
 

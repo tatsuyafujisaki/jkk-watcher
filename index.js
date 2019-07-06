@@ -32,16 +32,7 @@ async function doIt(url) {
   }
 }
 
-// Nakamurakita
+// Replace the value of jutaku_name with the jutaku_name value of the apartment of your choice.
 doIt('https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E430CF30A430E030CA30AB30E030E930AD30BF');
-
-// Kotakecho
-doIt('https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E330CF30A430E030B330BF30B130C130E730A6')
-
-// Chihaya
-doIt('https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30B330FC30B730E330CF30A430E030C130CF30E4');
-
-// Kasumidai
-doIt('https://jhomes.to-kousya.or.jp/search/jkknet/service/akiyaJyokenDirect?jutaku_name=30AB30B930DF30C030A4');
 
 // await page.screenshot({path: 'screenshot.png', fullPage: true});
